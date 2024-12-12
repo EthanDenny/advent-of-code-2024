@@ -1,3 +1,4 @@
+mod day11;
 mod day12;
 
 use chrono::{Datelike, FixedOffset, Utc};
@@ -25,6 +26,7 @@ macro_rules! convert_ans_to_string {
 
 fn get_answers(input: Vec<String>, day: i32) -> (String, String) {
     match day {
+        11 => convert_ans_to_string!(day11::answers(input)),
         12 => convert_ans_to_string!(day12::answers(input)),
         _ => unimplemented!(),
     }
