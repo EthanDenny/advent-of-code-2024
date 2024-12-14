@@ -1,4 +1,4 @@
-pub fn answers(input: Vec<String>) -> (i32, i32) {
+pub fn answers(input: Vec<String>) -> (i64, i64) {
     // Parsing
 
     for line in input {}
