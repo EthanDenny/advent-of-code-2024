@@ -27,9 +27,7 @@ pub fn answers(input: Vec<String>) -> (i64, i64) {
 
     // Answer 1
 
-    let mut ans1 = 0;
-
-    {
+    let ans1 = {
         let width = 101;
         let height = 103;
         let seconds = 100;
@@ -59,12 +57,12 @@ pub fn answers(input: Vec<String>) -> (i64, i64) {
             }
         }
 
-        ans1 = quads.iter().product();
-    }
+        quads.iter().product()
+    };
 
     // Answer 2
 
-    let mut ans2 = 0;
+    let ans2 = 0;
 
     // Return
 
